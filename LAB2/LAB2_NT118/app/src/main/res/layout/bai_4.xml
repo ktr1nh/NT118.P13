@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="type your id"
+        android:gravity="center"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_id">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/fullname"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_id">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_fullname"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="type your name"
+        android:gravity="center"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_fullname">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Is A Manager:"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fullname">
+
+    </TextView>
+    <CheckBox
+        android:id="@+id/cb_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_manager"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_manager"
+        app:layout_constraintTop_toBottomOf="@id/et_fullname"
+       >
+</CheckBox>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/btn_add"
+        app:layout_constraintTop_toBottomOf="@id/cb_manager"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add"
+        android:layout_marginTop="20dp"
+        android:background="#1A3E1D"
+        android:textSize="20sp">
+
+    </TextView>
+    <ListView
+        android:id="@+id/lv_person"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_selected"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

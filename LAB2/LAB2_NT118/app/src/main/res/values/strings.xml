@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LAB2_NT118</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="btn_bai1">BÀI 1</string>
+    <string name="btn_bai2">BÀI 2</string>
+    <string name="btn_bai3">BÀI 3</string>
+    <string name="btn_bai4">BÀI 4</string>
+    <string name="btn_bai5">BÀI 5</string>
+    <string name="btn_bai6">BÀI 6</string>
+    <string name="btn_nhapten">NHẬP NV</string>
+    <string name="nt118lab2">NT118 LAB 2</string>
+    <string name= "btn_add">ADD</string>
+    <string name="fullname">Full Name:</string>
+    <string name="nhap">TÊN NV</string>
+    <string name="staff">Staff</string>
+</resources>
