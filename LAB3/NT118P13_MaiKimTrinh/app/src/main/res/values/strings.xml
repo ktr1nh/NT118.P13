@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NT118.P13_MaiKimTrinh</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="btn_bai1">BÀI 1</string>
+    <string name="btn_bai2">BÀI 2</string>
+    <string name="btn_bai3">BÀI 3</string>
+
+</resources>
