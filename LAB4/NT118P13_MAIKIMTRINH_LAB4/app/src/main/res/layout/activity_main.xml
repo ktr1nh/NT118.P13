@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <ImageView
+            android:id="@+id/iv_uit_logo"
+            android:layout_width="@dimen/image_base"
+            android:layout_height="@dimen/image_base"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/uit_logo" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="from xml"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_base"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="from code"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_base"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_fade_in_xml"
+                    android:layout_width="0dp"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="fade in"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_fade_in_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="fade in"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_fade_out_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="fade out"
+                    android:gravity="center"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_fade_out_code"
+                    style="@style/themebutton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_base"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="fade  out"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_blink_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="blink"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_blink_code"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="blink"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_zoom_in_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="zoom in"
+                    android:gravity="center"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_zoom_in_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="zoom in"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_zoom_out_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="zoom out"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_zoom_out_code"
+                    android:layout_width="0dp"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="zoom out"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_rotate_xml"
+                    android:layout_width="0dp"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="rotate"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_rotate_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="rotate"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_move_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="move"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_move_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="move"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_slide_up_xml"
+                    android:layout_width="0dp"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="slide up"
+                    android:gravity="center"
+
+                    android:layout_marginRight="@dimen/margin_base"/>
+                <Button
+                    android:id="@+id/btn_slide_up_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="slide up"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_bounce_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="bounce"
+                    android:gravity="center"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_bounce_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:text="bounce"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_combine_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="combine"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+
+                <Button
+                    android:id="@+id/btn_combine_code"
+                    android:layout_width="0dp"
+                    style="@style/themebutton"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="combine"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_base"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

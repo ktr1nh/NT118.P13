@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="themebutton">
+        <item name="android:background">@drawable/button</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="themebutton2">
+        <item name="android:background">@drawable/button2</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+</resources>
